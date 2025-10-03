@@ -14,15 +14,13 @@
         {% include "components/header.html" %}
     </header>
     
-    <div class="proximamente_container">
-        {% include "components/sats.html" %}
+    <div class="main_container">
+        {% include "components/sats.html" with context%}
+        <!--{% block content %}{% endblock %}-->
     </div>
 
     <footer>
         {% include "components/footer.html" %}
     </footer>
-
-    {% block scripts %}
-    {% endblock %}
 </body>
 </html>
